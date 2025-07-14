@@ -1,0 +1,2 @@
+function r(r){return Number(r.replace(/[^0-9.-]+/g,""))}var a,e=document.querySelector("ul");(a=Array.from(e.children)).sort(function(a,e){var t=r(a.dataset.salary);return r(e.dataset.salary)-t}),a.forEach(function(r){return e.appendChild(r)}),console.log("Sorted employees by salary:",Array.from(e.children).map(function(a){return{name:a.textContent.trim(),position:a.dataset.position,salary:r(a.dataset.salary),age:Number(a.dataset.age)}}));
+//# sourceMappingURL=index.2724b518.js.map
